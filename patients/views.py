@@ -1,8 +1,7 @@
 from patients.models import Patients
 from patients.serializers import PatientSerializers
 from rest_framework import viewsets #importing viewsets which handles GET, POST, PUT, DELETE requests
-from django_filters.rest_framework import DjangoFilterBackend #importing DjangoFilterBackend for filtering the queryset based on specified fields
-from rest_framework import filters #importing filters for search functionality
+
 
 # Create your views class here.
 class PatientViewSet(viewsets.ModelViewSet):
