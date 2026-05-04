@@ -4,6 +4,7 @@ from patients.models import Patients
 
 class PatientSerializers(serializers.ModelSerializer):
     # This serializer is used to convert the Patients model instances into JSON format and vice versa.
+    # It includes all the fields from the Patients model, as well as two additional fields: age and risk_score, which are calculated using the methods defined in the Patients model.
     age = serializers.SerializerMethodField()
     risk_score = serializers.SerializerMethodField()
     

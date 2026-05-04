@@ -36,8 +36,7 @@ class Patients(models.Model):
     blood_pressure_diastolic = models.IntegerField()
     current_complaints = models.TextField()
     medical_history = models.TextField(blank=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    
+    created_at = models.DateTimeField(auto_now_add=True) #timestamp when the patient record was created
     #string representation of the patient object
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
