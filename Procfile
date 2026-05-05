@@ -1,0 +1,1 @@
+web: gunicorn medtrack.wsgi --log-file -
