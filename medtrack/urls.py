@@ -20,7 +20,6 @@ from rest_framework.authtoken.views import obtain_auth_token
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # Include the URLs from the patients app
-    path('api/', include('patients.urls')),
+    path('api/', include('apps.patients.urls')),
     path('api/login/', obtain_auth_token),
 ]

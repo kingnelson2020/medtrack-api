@@ -1,5 +1,5 @@
-from patients.models import Patients
-from patients.serializers import PatientSerializers
+from apps.patients.models import Patients
+from apps.patients.serializers import PatientSerializers
 from rest_framework import viewsets #importing viewsets which handles GET, POST, PUT, DELETE requests
 
 
